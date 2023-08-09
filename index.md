@@ -6,7 +6,7 @@
 
 ___
 
- ### Endpoints
+ # Endpoints
 
 - [startAnalysis](#startAnalysis)
 - [getAnalysis](#getAnalysis)
