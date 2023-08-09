@@ -3,10 +3,9 @@
 [![Version](https://img.shields.io/badge/Version-0.0.1-yellow.svg)](https://shields.io/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
-
 ___
 
- # Endpoints
+ Endpoints
 
 - [startAnalysis](#startAnalysis)
 - [getAnalysis](#getAnalysis)
