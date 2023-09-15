@@ -230,7 +230,7 @@ The response supplies the requested Data. An example response looks like this:
         "status":"finished"
     }
 
-of if the analysis is started using the list argument, the response object is structured like this: 
+or, if the analysis is started using the list argument, the response object is structured like this: 
 
     {
         "data":{
