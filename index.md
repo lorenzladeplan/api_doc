@@ -49,6 +49,12 @@ or
 | country_code | ISO-A3 country code (for Germany e.g. "DEU") |
 | zip_code | regional zip code (e.g. 01234) 
 
+or 
+
+| Parameter | Description |
+| ------ | ------ |
+| list | list of dictionaries, could be either a lat,lon pair or and adress. It needs to be combined with a location_id (e.g. [{'lat': 50, "lon":10, location_id:1234}, ...]) |
+
 
 ##### Additional Parameters:
 
@@ -100,6 +106,13 @@ The response for a succesful Analysis start looks like this.
         "status":"started"
         "analysis_id":"pred-api-1392276384",
     }
+or (in case you passed multiple coordinates usind the list parameter)
+
+    {
+        "started": {"pred-api-1392276384": [locationID1, locationID2, ...]}
+        "failed":[[locationID3, locationID4, ...]],
+    }
+In this case the started field tells you the prediction ID and you can verify which locations have been properly started. If the location ID is started it can be found in the started field otherwise it would be in the failed field and is either missing a parameter or does not contain a right value.
 
 ___
 
@@ -216,6 +229,18 @@ The response supplies the requested Data. An example response looks like this:
         },
         "status":"finished"
     }
+
+of if the analysis is started using the list argument, the response object is structured like this: 
+
+    {
+        "data":{
+              "location_id1": {data...},
+              "location_id2": {data...},
+              ...
+        }
+        "status":"finished"
+    }
+    
 
 The data fields are descriped as followed: 
 
