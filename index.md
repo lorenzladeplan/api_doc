@@ -53,7 +53,7 @@ or
 
 | Parameter | Description |
 | ------ | ------ |
-| list | list of dictionaries, could be either a lat,lon pair or and adress. It needs to be combined with a location_id (e.g. [{'lat': 50, "lon":10, location_id:1234}, ...]) |
+| list | list of dictionaries, could be either a lat,lon pair or and address. /n It needs to be combined with a location_id (e.g. [{'lat': 50, "lon":10, location_id:1234}, ...]) |
 
 
 ##### Additional Parameters:
